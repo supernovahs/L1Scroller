@@ -68,22 +68,41 @@ git clone https://github.com/supernovahs/L1Scroller.git
 
 ## FEEDBACK
 
- eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.  😄
+- eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.
+
+- Gas estimation often fails on forge `create` as well as on `remix`. It worked with following command
+ ```bash
+ forge create ./src/L1Scroller.sol:L1Scroller --rpc-url https://l1sload-rpc.scroll.io --private-key <KEY>  --gas-limit 1000000 --gas-price 551000000  --priority-gas-price 551000000
+```
 
 ## Deployments
 
 ### Blockscout Link
-
 L1Scroller - https://l1sload-blockscout.scroll.io/address/0xfA75fa50f36bb87669d0D4B8382BeC1C1C9570eC
 
 ### Contract Verification on Blockscout 
 Seems the devnet is not suppported on blockscout. Attached screenshot:-
 <img width="866" alt="Screenshot 2024-11-17 at 1 16 17 AM" src="https://github.com/user-attachments/assets/a77c7272-9a4a-4951-a071-15311792a0ac">
 
+## Testing
+
+- Run foundry tests 
+```bash
+forge test
+```
+
+- Run rust SDK tests 
+```bash
+cd scroller-rs
+cargo test
+```
 
 ## Made with ❤️ by supernovahs
 - [github](https://github.com/supernovahs)
 - [x](https://x.com/supernovahs444)
+
+
+
 
 
 
