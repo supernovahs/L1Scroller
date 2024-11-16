@@ -64,7 +64,7 @@ Clone the repository and explore the smart contracts and the Rust SDK:
 
 ```bash
 git clone https://github.com/supernovahs/L1Scroller.git
-
+```
 
 ## FEEDBACK
 
