@@ -1,0 +1,10 @@
+[package]
+name = "scroller-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy = { version = "0.6.4", features = ["sol-types", "contract"] }
+eyre = "0.6.12"
+thiserror = "2.0.3"
+tokio = "1.41.1"

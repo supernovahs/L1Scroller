@@ -1,66 +1,33 @@
-## Foundry
+# L1Scroller
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A tooling support for Scroll's new L1SLOAD feature. 
+1) [L1Scroller] - Contract deployed on the scroll devnet with functions like `readSlot`, `readMultipleSlots`, `readUint`, `readUint160`,`readAddress`,`readUint96`,`readUint48`,`readUint24`, `readUint8`,`readUint32`,`readUint64`,`readUint128`,`bytesToUint`,`readString`.
 
-Foundry consists of:
+2) [NFTL1Scroller] - Openzeppelin compatible library for ERC721, containing helper functions to get `balances_slot`, `owners_slot`,`token_approvals_slot`.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+3) [ERC20Scroller] -Openzeppelin compatible library for ERC20, containing helper functions to get `balances_slot`,`allowances_slot`,`total_supply_slot`,`name_slot`, `symbol_slot`.
 
-## Documentation
+4) Rust [SDK] to use the functions offchain. 
 
-https://book.getfoundry.sh/
 
-## Usage
+## Feedback
 
-### Build
+1) eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.
 
-```shell
-$ forge build
-```
 
-### Test
+## Deployments
 
-```shell
-$ forge test
-```
 
-### Format
 
-```shell
-$ forge fmt
-```
 
-### Gas Snapshots
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
 
-```shell
-$ anvil
-```
 
-### Deploy
+## Made with ❤️ by supernovahs
+- [github](https://github.com/supernovahs)
+- [x](https://x.com/supernovahs444)
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
 
-### Cast
 
-```shell
-$ cast <subcommand>
-```
 
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```

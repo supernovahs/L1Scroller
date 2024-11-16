@@ -1,0 +1,11 @@
+/Users/supernovahs/Desktop/ethglobal/scroller/scroller-rs/target/debug/deps/liburl-bd6ea63dc3526c81.rmeta: /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/lib.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/host.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/origin.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/parser.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/path_segments.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/slicing.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/quirks.rs
+
+/Users/supernovahs/Desktop/ethglobal/scroller/scroller-rs/target/debug/deps/url-bd6ea63dc3526c81.d: /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/lib.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/host.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/origin.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/parser.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/path_segments.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/slicing.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/quirks.rs
+
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/lib.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/host.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/origin.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/parser.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/path_segments.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/slicing.rs:
+/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.3/src/quirks.rs:

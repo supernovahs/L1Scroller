@@ -1,0 +1,1 @@
+l1scroller::Scroller<L1ScrollerInstance<alloy::transports::alloy_transport_http::Http<Client>, Arc<RootProvider<alloy::transports::alloy_transport_http::Http<Client>>>>>

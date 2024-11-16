@@ -97,7 +97,7 @@ contract L1Scroller {
 
     /// @notice Converts a `bytes` array to a `uint256` value using ABI decoding.
     /// @param b The `bytes` array to convert.
-    /// @return The decoded `uint256` value.
+    /// @return The decoded `uint256` value
     function bytesToUint(bytes memory b) public pure returns (uint256) {
         return abi.decode(b, (uint256));
     }
@@ -108,6 +108,17 @@ contract L1Scroller {
     /// @return The decoded `string` value.
     function readString(address l1_contract, uint256 slot) public view returns (string memory) {
         bytes memory result = readSlot(l1_contract, slot);
-        return string(result);
+        return bytes32ToString(bytes32(result));
+    }
+
+    function bytes32ToString(bytes32 _bytes32) public pure returns (string memory) {
+        bytes memory bytesArray = new bytes(32);
+        for (uint256 i; i < 32; i++) {
+            if (_bytes32[i] == 0x00) {
+                break;
+            }
+            bytesArray[i] = _bytes32[i];
+        }
+        return string(bytesArray);
     }
 }
