@@ -72,6 +72,10 @@ git clone https://github.com/supernovahs/L1Scroller.git
 
 ## Deployments
 
+### Contract Verification on Blockscout 
+Seems the devnet is not suppported on blockscout. Attached screenshot:-
+<img width="866" alt="Screenshot 2024-11-17 at 1 16 17 AM" src="https://github.com/user-attachments/assets/a77c7272-9a4a-4951-a071-15311792a0ac">
+
 
 ## Made with ❤️ by supernovahs
 - [github](https://github.com/supernovahs)
