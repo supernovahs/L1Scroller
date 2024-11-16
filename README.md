@@ -6,6 +6,7 @@ A tooling support for Scroll's new **L1SLOAD** feature, enabling efficient off-c
 2. **[NFTL1Scroller](https://github.com/supernovahs/L1Scroller/blob/master/src/utils/NFTL1Scroller.sol)** - OpenZeppelin-compatible library for ERC721, providing helper functions for reading balance, owner, and token approval slots.
 3. **[ERC20L1Scroller](https://github.com/supernovahs/L1Scroller/blob/master/src/utils/ERC20L1Scroller.sol)** - OpenZeppelin-compatible library for ERC20, offering functions for reading balance, allowance, total supply, name, and symbol slots.
 4. **[Rust SDK](https://github.com/supernovahs/L1Scroller/tree/master/scroller-rs)** - A Rust SDK for using the functions off-chain, enabling seamless integration with Rust-based applications.
+5. [Javascript SDK]() - A Js SDK for using the functions offchain with example [usage]().
 
 ## L1Scroller Contract
 
@@ -68,9 +69,16 @@ git clone https://github.com/supernovahs/L1Scroller.git
 
 ## FEEDBACK
 
-- eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.
+- eth_call is not working in L1SLOAD devnet when using [alloy](https://github.com/alloy-rs/alloy) due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.Discussed it with the Scroll team too, will open an issue in alloy's github .
+- Things work in the JS SDk as expected.
 
-- Gas estimation often fails on forge `create` as well as on `remix`. It worked with following command
+- Gas estimation often fails on forge `create` as well as on `remix`. Commons errors received:
+    - `intrinsic gas too low ` even when gas limit is enough
+    - `replacement transaction underpriced` 
+
+I think an issue should be opened in foundry and remix to better estimate gas and pricing for scroll RPCs.
+
+ It worked with following command
  ```bash
  forge create ./src/L1Scroller.sol:L1Scroller --rpc-url https://l1sload-rpc.scroll.io --private-key <KEY>  --gas-limit 1000000 --gas-price 551000000  --priority-gas-price 551000000
 ```
@@ -97,6 +105,12 @@ cd scroller-rs
 cargo test
 ```
 
+- Run JS SDK tests
+
+```bash
+npm install
+node ./scroller.test.js
+```
 ## Made with ❤️ by supernovahs
 - [github](https://github.com/supernovahs)
 - [x](https://x.com/supernovahs444)
