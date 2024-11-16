@@ -8,7 +8,7 @@ pragma solidity ^0.8.13;
 contract L1Scroller {
     /// @dev Address of the precompiled contract for reading storage slots.
     address constant L1_SLOAD = 0x0000000000000000000000000000000000000101;
-    
+
     address constant L1_BLOCKS = 0x5300000000000000000000000000000000000001;
 
     /// @notice Reads the raw bytes from a specified storage slot of an L1 contract.
@@ -16,6 +16,17 @@ contract L1Scroller {
     /// @param slot The storage slot index to read from.
     /// @return result The raw bytes stored at the specified slot.
     function readSlot(address l1_contract, uint256 slot) public view returns (bytes memory) {
+        bytes memory input = abi.encodePacked(l1_contract, slot);
+        (bool success, bytes memory result) = L1_SLOAD.staticcall(input);
+        require(success, "Failed to read slot");
+        return result;
+    }
+
+    /// @notice Reads the raw bytes from a specified storage slot of an L1 contract.
+    /// @param l1_contract The address of the L1 contract.
+    /// @param slot The storage slot index to read from.
+    /// @return result The raw bytes stored at the specified slot.
+    function readMultipleSlots(address l1_contract, uint256[] memory slot) public view returns (bytes memory) {
         bytes memory input = abi.encodePacked(l1_contract, slot);
         (bool success, bytes memory result) = L1_SLOAD.staticcall(input);
         require(success, "Failed to read slot");
@@ -94,4 +105,6 @@ contract L1Scroller {
         bytes memory result = readSlot(l1_contract, slot);
         return string(result);
     }
+
+
 }
