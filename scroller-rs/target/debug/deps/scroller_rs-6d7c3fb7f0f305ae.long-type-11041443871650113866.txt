@@ -1,1 +1,0 @@
-fn(alloy::transports::alloy_transport_http::reqwest::Url) -> alloy::transports::alloy_transport_http::reqwest::Url {<alloy::transports::alloy_transport_http::reqwest::Url as From<alloy::transports::alloy_transport_http::reqwest::Url>>::from}

@@ -1,9 +1,0 @@
-/Users/supernovahs/Desktop/ethglobal/scroller/scroller-rs/target/debug/deps/liballoy_rlp_derive-a4b55c6ac6ef5a18.dylib: /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/lib.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/de.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/en.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/utils.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/../README.md
-
-/Users/supernovahs/Desktop/ethglobal/scroller/scroller-rs/target/debug/deps/alloy_rlp_derive-a4b55c6ac6ef5a18.d: /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/lib.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/de.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/en.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/utils.rs /Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/../README.md
-
-/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/lib.rs:
-/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/de.rs:
-/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/en.rs:
-/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/utils.rs:
-/Users/supernovahs/.cargo/registry/src/index.crates.io-6f17d22bba15001f/alloy-rlp-derive-0.3.9/src/../README.md:
