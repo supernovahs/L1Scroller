@@ -68,9 +68,13 @@ git clone https://github.com/supernovahs/L1Scroller.git
 
 ## FEEDBACK
 
- eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.
+ eth_call is not working in L1SLOAD devnet due to unknown reasons (It works on Scroll Sepolia, Ethereum Sepolia). Hence testing for the Rust SDK are not available yet.  😄
 
 ## Deployments
+
+### Blockscout Link
+
+L1Scroller - https://l1sload-blockscout.scroll.io/address/0xfA75fa50f36bb87669d0D4B8382BeC1C1C9570eC
 
 ### Contract Verification on Blockscout 
 Seems the devnet is not suppported on blockscout. Attached screenshot:-
