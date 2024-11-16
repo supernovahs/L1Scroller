@@ -1,10 +1,9 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
 /// @title L1Scroller - Utility contract to read storage slots from L1 contracts.
 /// @notice This contract provides functions to read various integer types and strings
 /// from storage slots of another contract on the L1 layer using a precompiled contract.
-
 contract L1Scroller {
     /// @dev Address of the precompiled contract for reading storage slots.
     address constant L1_SLOAD = 0x0000000000000000000000000000000000000101;
