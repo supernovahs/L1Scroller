@@ -25,7 +25,7 @@ contract L1Scroller {
     /// @notice Reads the raw bytes from multiple slots of an L1 contract.
     /// @param l1_contract The address of the L1 contract.
     /// @param slot The storage slotsto read from.
-    /// @return result The raw bytes 
+    /// @return result The raw bytes
     function readMultipleSlots(address l1_contract, uint256[] memory slot) public view returns (bytes memory) {
         bytes memory input = abi.encodePacked(l1_contract, slot);
         (bool success, bytes memory result) = L1_SLOAD.staticcall(input);
@@ -46,6 +46,12 @@ contract L1Scroller {
     function readUint160(address l1_contract, uint256 slot) public view returns (uint160) {
         bytes memory result = readSlot(l1_contract, slot);
         return uint160(bytesToUint(result));
+    }
+
+    /// @notice Reads a `address` value from a specified storage slot.
+    function readAddress(address l1_contract, uint256 slot) public view returns (address) {
+        bytes memory result = readSlot(l1_contract, slot);
+        return address(uint160(bytesToUint(result)));
     }
 
     /// @notice Reads a `uint96` value from a specified storage slot.
@@ -105,6 +111,4 @@ contract L1Scroller {
         bytes memory result = readSlot(l1_contract, slot);
         return string(result);
     }
-
-
 }
