@@ -7,6 +7,7 @@ A tooling support for Scroll's new **L1SLOAD** feature, enabling efficient off-c
 3. **[ERC20L1Scroller](https://github.com/supernovahs/L1Scroller/blob/master/src/utils/ERC20L1Scroller.sol)** - OpenZeppelin-compatible library for ERC20, offering functions for reading balance, allowance, total supply, name, and symbol slots.
 4. **[Rust SDK](https://github.com/supernovahs/L1Scroller/tree/master/scroller-rs)** - A Rust SDK for using the functions off-chain, enabling seamless integration with Rust-based applications.
 5. [Javascript SDK](https://github.com/supernovahs/L1Scroller/blob/master/l1ScrollerSdk.js) - A Js SDK for using the functions offchain with example [usage](https://github.com/supernovahs/L1Scroller/blob/master/scroller.test.js).
+6. [Python SDK]() - Python SDK
 
 ## L1Scroller Contract
 
@@ -110,6 +111,14 @@ cargo test
 ```bash
 npm install
 node ./scroller.test.js
+```
+
+- Python SDK 
+```bash
+python3 -m venv env
+source env/bin/activate  # On Windows, use `env\Scripts\activate`
+pip install web3
+python3 l1_scroller_sdk.py
 ```
 ## Made with ❤️ by supernovahs
 - [github](https://github.com/supernovahs)
