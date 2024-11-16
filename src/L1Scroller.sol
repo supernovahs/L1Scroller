@@ -22,10 +22,10 @@ contract L1Scroller {
         return result;
     }
 
-    /// @notice Reads the raw bytes from a specified storage slot of an L1 contract.
+    /// @notice Reads the raw bytes from multiple slots of an L1 contract.
     /// @param l1_contract The address of the L1 contract.
-    /// @param slot The storage slot index to read from.
-    /// @return result The raw bytes stored at the specified slot.
+    /// @param slot The storage slotsto read from.
+    /// @return result The raw bytes 
     function readMultipleSlots(address l1_contract, uint256[] memory slot) public view returns (bytes memory) {
         bytes memory input = abi.encodePacked(l1_contract, slot);
         (bool success, bytes memory result) = L1_SLOAD.staticcall(input);
